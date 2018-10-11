@@ -1,3 +1,161 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    background-color: #f9fafc;
+}
+
+header p {
+    font-weight: 700;
+    display: inline;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #69696a;
+    padding: 10px;
+}
+
+a:last-child {
+    text-align: center;
+    background-color: #000;
+    color: #f9fafc;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.left {
+    display: flex;
+    flex-flow: column;
+}
+
+.co-name {
+    font-size: 32px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.lorem {
+    color: #69696a;
+    padding-left: 15px;
+    border-left: 3px solid #69696a;
+    display: inline-block;
+}
+
+.main-body {
+    margin-left: 10px;
+}
+button {
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    background-color: #000;
+    color: #f9fafc;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 92%;
+}
+
+.right {
+    display: none;
+}
+
+@media only screen and (min-width: 750px){
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 40%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    a:last-child {
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .main-body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lorem{
+        margin-top: 32px;
+    }
+
+    .left {
+        width: 48%;
+    }
+
+    .co-name {
+        position: relative;
+        top: 50px;
+    }
+
+    .lorem {
+        position: relative;
+        top: 50px;
+    }
+
+    .right {
+        display: inline-block;
+        width: 48%;
+    }
+    
+    .peach {
+        display: inline-block;
+        position: relative;
+        background-color: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        bottom: 50px;
+        left: 350px;
+        z-index: 10;
+    }
+
+    .purple {
+        display: inline-block;
+        position: relative;
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        left: 25px;
+        top: 0px;
+        z-index: 8;
+        }
+
+    .pink {
+        display: inline-block;
+        position: relative;
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        top: 125px;
+        left: 100px;
+    }
+
+    button {
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+    }
 }
